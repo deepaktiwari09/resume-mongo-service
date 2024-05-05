@@ -1,6 +1,6 @@
 {
     "database": "Resume_stage",
-    "collection": "products",
+    "collection": "skills",
     "roles": [
       {
         "name": "readAndWriteAll",
