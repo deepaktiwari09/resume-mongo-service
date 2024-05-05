@@ -1,7 +1,5 @@
 {
     "on_type": "Query",
     "field_name": "getProducts",
-    "function_name": "getProducts",
-    "payload_type_format": "generated-list",
-    "payload_type": "Product"
+    "function_name": "getProducts"
 }
