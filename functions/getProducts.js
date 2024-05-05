@@ -15,13 +15,10 @@ exports = async function(arg){
 
   var findResult;
   try {
-    // Get a value from the context (see "Values" tab)
-    // Update this to reflect your value's name.
-    var valueName = "value_name";
-    var value = context.values.get(valueName);
+
 
     // Execute a FindOne in MongoDB 
-    findResult = await collection.findOne({name:arg})
+    findResult = await collection.find()
 
   } catch(err) {
     console.log("Error occurred while executing findOne:", err.message);
