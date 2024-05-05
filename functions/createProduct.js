@@ -15,10 +15,8 @@ exports = async function(arg){
 
   var findResult;
   try {
-    if(!arg.name){
-      throw new Error("name is missing")
-    }
-    findResult = await collection.insertOne(arg).then(res=> {
+    
+    findResult = await collection.insertOne({name:new Date().toISOString()}).then(res=> {
       return res
     })
 
