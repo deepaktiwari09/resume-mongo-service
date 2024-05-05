@@ -1,4 +1,5 @@
 {
+  "name":"products",
   "properties": {
     "_id": {
       "bsonType": "objectId"
