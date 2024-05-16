@@ -18,20 +18,34 @@
                 "bsonType": "objectId"
             }
         },
-        "startDate": {
-            "bsonType": "string"
-        },
-        "endDate": {
-            "bsonType": "string"
-        },
-        "currentlyWorking": {
-            "bsonType": "bool"
-        },
         "website": {
             "bsonType": "string"
         },
         "location": {
             "bsonType": "string"
+        },
+        "jobs": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "position": {
+                        "bsonType": "string"
+                    },
+                    "responsibility": {
+                        "bsonType": "string"
+                    },
+                    "startDate": {
+                        "bsonType": "string"
+                    },
+                    "endDate": {
+                        "bsonType": "string"
+                    },
+                    "current": {
+                        "bsonType": "bool"
+                    }
+                }
+            }
         }
     }
 }
