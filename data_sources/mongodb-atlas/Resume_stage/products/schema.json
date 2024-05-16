@@ -1,12 +1,49 @@
 {
-  "title":"products",
-  "properties": {
-    "_id": {
-      "bsonType": "objectId"
+    "title": "products",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "name": {
+            "bsonType": "string"
+        },
+        "description": {
+            "bsonType": "string"
+        },
+        "skills": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "objectId"
+            }
+        },
+        "userStory": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "objectId"
+            }
+        },
+        "stores": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "name": {
+                        "bsonType": "string"
+                    },
+                    "url": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        },
+        "images": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "string"
+            }
+        }
     },
-    "name": {
-      "bsonType": "string"
-    }
-  },
-  "required": ["_id"]
+    "required": [
+        "_id"
+    ]
 }

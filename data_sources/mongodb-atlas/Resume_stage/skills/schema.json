@@ -1,8 +1,50 @@
 {
-    "title": "skills",
     "properties": {
         "_id": {
             "bsonType": "objectId"
+        },
+        "name": {
+            "bsonType": "string"
+        },
+        "experience": {
+            "bsonType": "int"
+        },
+        "description": {
+            "bsonType": "string"
+        },
+        "tools": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "name": {
+                        "bsonType": "string"
+                    },
+                    "toollink": {
+                        "bsonType": "string"
+                    },
+                    "outputs": {
+                        "bsonType": "array",
+                        "items": {
+                            "bsonType": "object",
+                            "properties": {
+                                "description ": {
+                                    "bsonType": "string"
+                                },
+                                "title": {
+                                    "bsonType": "string"
+                                }
+                            }
+                        }
+                    },
+                    "description": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        },
+        "imageUrl": {
+            "bsonType": "string"
         }
     },
     "required": [

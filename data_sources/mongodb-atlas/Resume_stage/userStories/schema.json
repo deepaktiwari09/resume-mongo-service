@@ -1,0 +1,30 @@
+{
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "problem": {
+            "bsonType": "string"
+        },
+        "userFlow": {
+            "bsonType": "string"
+        },
+        "solution": {
+            "bsonType": "string"
+        },
+        "userReviews": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "userName": {
+                        "bsonType": "string"
+                    },
+                    "review": {
+                        "bsonType": "string"
+                    }
+                }
+            }
+        }
+    }
+}
